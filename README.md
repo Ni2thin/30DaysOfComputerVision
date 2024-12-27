@@ -109,5 +109,8 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 ## Contours
 
 - Detect and analyze contours in images for shape analysis.
+  
+# Day 2: Detecting color with Python and OpenCV 
+
 
 
