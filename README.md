@@ -53,3 +53,61 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 
 # Day 1: Getting started with OpenCV
 
+
+## Key Concepts
+
+- **Images in CV2**: Images are stored as **NumPy arrays** in OpenCV.
+- **Image Shape**: The shape of an image consists of **height, width, and channels** (BGR format).
+- **Color Format**: 
+  - OpenCV uses **BGR** (Blue, Green, Red) while libraries like Matplotlib use **RGB**.
+  - To convert from BGR to RGB, use:
+    ```
+    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    ```
+
+## Image Manipulation
+
+- **Shape and Resize**: Use `cv2.resize()` to change the dimensions of an image.
+- **Cropping**: Crop images by slicing the NumPy array.
+
+## Color Space Conversions
+
+- Convert between color spaces using functions like:
+  - `cv2.cvtColor(image, cv2.COLOR_BGR2RGB)` for BGR to RGB
+  - `cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)` for BGR to Grayscale
+  - `cv2.cvtColor(image, cv2.COLOR_BGR2HSV)` for BGR to HSV
+
+## Blurring Techniques
+
+- Use various blurring methods such as:
+  - `cv2.blur()`
+  - `cv2.medianBlur()`
+  - `cv2.GaussianBlur()`
+
+## Thresholding Methods
+
+- Apply different thresholding techniques for segmentation:
+  - **Global Thresholding**
+  - **Adaptive Thresholding**
+  - Converts images from normal to binary.
+
+## Edge Detection Techniques
+
+- Utilize edge detection algorithms like:
+  - `cv2.Sobel()`
+  - `cv2.Canny()`
+  - `cv2.Laplacian()`
+- Morphological operations such as dilation and erosion can also be applied.
+
+## Drawing Functions
+
+- Draw shapes on images using functions like:
+  - `cv2.line()`
+  - `cv2.rectangle()`
+  - `cv2.circle()`
+
+## Contours
+
+- Detect and analyze contours in images for shape analysis.
+
+
