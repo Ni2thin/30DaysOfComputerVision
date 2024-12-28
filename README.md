@@ -112,5 +112,27 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
   
 # Day 2: Detecting color with Python and OpenCV 
 
+This project uses OpenCV to detect and track objects of a specific color in real-time using a webcam feed. It processes frames to isolate the target color, highlights detected objects with bounding boxes, and displays the result.
+
+## Features
+
+- Dynamic HSV Range:
+Adapts HSV thresholds for any BGR color, useful for varying lighting conditions.
+- Hue Wrapping for Red:
+Handles HSV hue wrapping (0–10 and 170–180) to avoid missing red objects.
+- Noise Reduction:
+Combines GaussianBlur and morphological operations (MORPH_CLOSE, MORPH_OPEN) for clean masks.
+- Real-Time Optimization:
+Ignores small noise with contour area thresholding (area > 500).
+- Mirror-Like View:
+Flips frames (cv2.flip) for intuitive user interaction.
+- Dynamic Highlighting:
+Draws bounding boxes around detected objects; replace with contours for precise outlines.
+- Fail-Safe Video Capture:
+Handles webcam failures gracefully with if not ret.
+- Multi-Color Support:
+Extendable to detect multiple colors by blending masks.
+
+
 
 
