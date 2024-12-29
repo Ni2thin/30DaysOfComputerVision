@@ -133,6 +133,16 @@ Handles webcam failures gracefully with if not ret.
 - Multi-Color Support:
 Extendable to detect multiple colors by blending masks.
 
+# Day 3: Face Anonymizer  
+
+This project implements face detection and blurring using **OpenCV** and **Mediapipe**. The application supports three different modes for processing images and video.
+
+### Key Features:
+- **Face Detection Model**: Uses Mediapipe's face detection model with a **50% confidence threshold** to detect faces.
+- **Blurring**: A Gaussian blur with a kernel size of **(30, 30)** is applied to the detected faces.
+- **Video Processing**: Processes video frames at **25 FPS** and saves them in an output directory.
+- **Output**: All processed images and videos are saved in the **output** directory.
+
 
 
 
