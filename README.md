@@ -143,6 +143,9 @@ This project implements face detection and blurring using **OpenCV** and **Media
 - **Video Processing**: Processes video frames at **25 FPS** and saves them in an output directory.
 - **Output**: All processed images and videos are saved in the **output** directory.
 
+! [Face Anonymizer sample](Images/face anoymizer.png)
+
+
 
 
 
