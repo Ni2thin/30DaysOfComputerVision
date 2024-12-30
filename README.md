@@ -136,6 +136,7 @@ Extendable to detect multiple colors by blending masks.
 # Day 3: Face Anonymizer  
 
 This project implements face detection and blurring using **OpenCV** and **Mediapipe**. The application supports three different modes for processing images and video.
+[Face Anonymizer output](Images/face-blur.png)
 
 ### Key Features:
 - **Face Detection Model**: Uses Mediapipe's face detection model with a **50% confidence threshold** to detect faces.
@@ -143,7 +144,6 @@ This project implements face detection and blurring using **OpenCV** and **Media
 - **Video Processing**: Processes video frames at **25 FPS** and saves them in an output directory.
 - **Output**: All processed images and videos are saved in the **output** directory.
 
-! [Face Anonymizer sample](Images/face-blur.png)
 
 
 
