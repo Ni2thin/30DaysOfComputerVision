@@ -50,6 +50,7 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 29 | 24-01-2025 | Object detection on Raspberry Pi USB camera         | [Object detection on Raspberry Pi](link)  |
 | Day 30 | 25-01-2025 | Image generation with Python & Stable Diffusion     | [Image generation](link)                  |
 
+---
 
 # Day 1: Getting started with OpenCV
 
@@ -109,6 +110,8 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 ## Contours
 
 - Detect and analyze contours in images for shape analysis.
+
+  ---
   
 # Day 2: Detecting color with Python and OpenCV 
 
@@ -133,6 +136,8 @@ Handles webcam failures gracefully with if not ret.
 - Multi-Color Support:
 Extendable to detect multiple colors by blending masks.
 
+---
+
 # Day 3: Face Anonymizer  
 
 This project implements face detection and blurring using **OpenCV** and **Mediapipe**. The application supports three different modes for processing images and video.
@@ -143,6 +148,39 @@ This project implements face detection and blurring using **OpenCV** and **Media
 - **Blurring**: A Gaussian blur with a kernel size of **(30, 30)** is applied to the detected faces.
 - **Video Processing**: Processes video frames at **25 FPS** and saves them in an output directory.
 - **Output**: All processed images and videos are saved in the **output** directory.
+  
+---
+
+# Day 4: Text detector using tesseract
+
+## **Features**
+1. **Text Detection in Images**
+   - Processes an input image to detect and extract text.
+   - Highlights detected text regions with bounding boxes.
+   
+2. **Real-Time Text Detection via Webcam**
+   - Captures webcam feed to detect and extract text in real-time.
+   - Displays processed frames with detected text.
+
+
+## **Key Concepts**
+1. **Preprocessing Techniques**
+   - Convert images to grayscale.
+   - Apply thresholding to enhance text regions.
+   - Use morphological operations (dilation) to emphasize text.
+
+2. **Text Detection**
+   - Use Tesseract OCR with custom configurations:
+     - **OEM 3**: Tesseract engine mode for both legacy and LSTM models.
+     - **PSM 6**: Page segmentation mode for detecting text blocks.
+   - Extract text data (including bounding box coordinates) using `pytesseract.image_to_data`.
+
+3. **Bounding Boxes**
+   - Draw rectangles around detected text regions with confidence > 50%.
+   
+---
+
+# Day 5
 
 
 
