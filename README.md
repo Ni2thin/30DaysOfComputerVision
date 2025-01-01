@@ -180,7 +180,31 @@ This project implements face detection and blurring using **OpenCV** and **Media
    
 ---
 
-# Day 5
+# Day 5: Parking Spot Detection and Classification
+
+## **Features**
+1. **Parking Spot Detection**  
+   - Detect parking spots in video using a binary mask and extract regions of interest (ROIs).
+
+2. **Real-Time Spot Classification**  
+   - Classify each spot as `empty` or `not_empty` using a pre-trained SVM model.  
+   - Update status dynamically and visualize with:
+     - **Green** bounding boxes for `empty` spots.  
+     - **Red** bounding boxes for `not_empty` spots.
+
+3. **Availability Counter**  
+   - Displays the number of available spots in real-time on the video feed.
+
+4. **Efficient Frame Processing**  
+   - Analyze frames at intervals to optimize performance while ensuring accuracy.
+
+### **Output**
+[Parking Spot Detection Output](Projects/image-classification/Parking spot detection/parking spot - output.png)  
+
+### **Assets** 
+[Download Dataset](https://drive.google.com/drive/folders/15lLq-6Bbuq7LyILMg2rzJOL4WpnxX6oX?usp=share_link) 
+
+
 
 
 
