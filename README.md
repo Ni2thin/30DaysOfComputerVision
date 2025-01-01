@@ -24,9 +24,9 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 3 | 29-12-2024  | Face detection and blurring with Python              | [Face detection and blurring](https://www.youtube.com/watch?v=DRMBqhrfxXg&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=4)       |
 | Day 4 | 30-12-2024  | Text detection with Python(Tesseract)             | [Text detection with Python](https://www.youtube.com/watch?v=CcC3h0waQ6I&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=5)        |
 | Day 5 | 31-12-2024  | Image classification with Python and OpenCV          | [Image classification with Python](https://www.youtube.com/watch?v=il8dMDlXrIE&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=6&pp=iAQB)  |
-| Day 6 | 01-01-2025  | Emotion detection with Python, OpenCV, and others    | [Emotion detection](link)                 |
-| Day 7 | 02-01-2025  | Image classification + feature extraction           | [Image classification + feature extraction](link) |
-| Day 8 | 03-01-2025  | Sign language detection with Python and OpenCV       | [Sign language detection](link)           |
+| Day 6 | 01-01-2025  | Emotion detection with Python, OpenCV, and others    | [Emotion detection](https://www.youtube.com/watch?v=h0LoewzGzhc&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=8)                 |
+| Day 7 | 02-01-2025  | Image classification + feature extraction           | [Image classification + feature extraction](https://youtu.be/oEKg_jiV1Ng?feature=shared) |
+| Day 8 | 03-01-2025  | Sign language detection with Python and OpenCV       | [Sign language detection](https://youtu.be/MJCSjXepaAM?feature=shared)           |
 | Day 9 | 04-01-2025  | Image classification WEB APP with Python & Flask     | [Image classification web app](link)      |
 | Day 10 | 05-01-2025 | AWS Rekognition tutorial (Object detection)      | [AWS Rekognition](link)                   |
 | Day 11 | 06-01-2025 | Yolov8 object tracking 100% native                   | [Yolov8 object tracking](link)            |
