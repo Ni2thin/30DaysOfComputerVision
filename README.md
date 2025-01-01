@@ -199,11 +199,14 @@ This project implements face detection and blurring using **OpenCV** and **Media
    - Analyze frames at intervals to optimize performance while ensuring accuracy.
 
 ### **Output**
-![Parking Spot Detection Output](https://github.com/Ni2thin/30DaysOfComputerVision/blob/04c4f59c6f005878688dd18dac90a65fe234c853/Projects/image-classification/Parking%20spot%20detection/parking%20spot%20-%20output.png)
-  
+<img src="https://github.com/Ni2thin/30DaysOfComputerVision/blob/04c4f59c6f005878688dd18dac90a65fe234c853/Projects/image-classification/Parking%20spot%20detection/parking%20spot%20-%20output.png" width="1050" height="500"/>
 
 ### **Assets** 
 [Download Dataset](https://drive.google.com/drive/folders/15lLq-6Bbuq7LyILMg2rzJOL4WpnxX6oX?usp=share_link) 
+
+---
+# Day 6: 
+
 
 
 
