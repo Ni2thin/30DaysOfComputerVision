@@ -233,7 +233,36 @@ This project utilizes Python, OpenCV, and face landmark detection to classify hu
   Limits system thread usage to prevent crashes and improve stability, especially on macOS.  
 
 ---
-# Day 7:
+# Day 7: Image Classification and Feature Extraction with Python  
+
+This project leverages `Img2Vec` and a pre-trained Random Forest model to classify images into predefined categories. It extracts feature vectors from images, predicts their labels, and provides confidence scores for each classification.
+
+## **Features**  
+
+- **Image Feature Extraction**:  
+  Utilizes `Img2Vec` to generate 512-dimensional feature vectors, representing high-level characteristics of images.  
+
+- **Robust Classification**:  
+  Employs a Random Forest classifier to predict image labels with high accuracy.  
+
+- **Confidence Scoring**:  
+  Outputs confidence scores alongside predictions to gauge the reliability of the results.  
+
+- **Error Handling**:  
+  Includes checks for file existence and compatibility to prevent crashes during runtime.  
+
+- **Human-Readable Output**:  
+  Converts predictions into category labels (e.g., "Sunny", "Cloudy") for better interpretability.  
+
+- **Flexible Input**:  
+  Compatible with various image formats (e.g., JPG, PNG, BMP).  
+
+- **Modular Workflow**:  
+  Easily extendable to add more categories or integrate advanced models for improved classification.  
+
+---
+# Day 8:
+
 
 
 
