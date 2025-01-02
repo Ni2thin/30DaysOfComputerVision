@@ -205,7 +205,35 @@ This project implements face detection and blurring using **OpenCV** and **Media
 [Download Dataset](https://drive.google.com/drive/folders/15lLq-6Bbuq7LyILMg2rzJOL4WpnxX6oX?usp=share_link) 
 
 ---
-# Day 6: 
+# Day 6: Emotion Detection with Python and OpenCV  
+
+This project utilizes Python, OpenCV, and face landmark detection to classify human emotions from images. It processes face images, extracts 1404 key landmarks, and organizes them into labeled datasets for emotion classification.  
+
+## **Features**  
+
+- **Emotion Categorization**:  
+  Processes images into seven predefined emotional categories (e.g., happy, sad, angry).  
+
+- **Facial Landmark Extraction**:  
+  Uses a custom `get_face_landmarks` function to capture precise facial landmarks essential for emotion detection.  
+
+- **Batch Processing**:  
+  Efficiently processes images in batches to optimize resource usage and avoid system overloads.  
+
+- **Intermediate Data Storage**:  
+  Saves labeled datasets for each emotion in separate text files (`data_<emotion>.txt`) and combines them into a single dataset (`data.txt`).  
+
+- **Robust File Handling**:  
+  Skips invalid or non-image files to ensure smooth processing.  
+
+- **Scalable Architecture**:  
+  Easily extendable to support more emotions or larger datasets without requiring significant code changes.  
+
+- **Threading Optimization**:  
+  Limits system thread usage to prevent crashes and improve stability, especially on macOS.  
+
+---
+# Day 7:
 
 
 
