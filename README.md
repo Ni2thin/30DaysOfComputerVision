@@ -54,7 +54,6 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 
 # Day 1: Getting started with OpenCV
 
-
 ## Key Concepts
 
 - **Images in CV2**: Images are stored as **NumPy arrays** in OpenCV.
@@ -65,6 +64,7 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
     ```
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     ```
+- [Introduction to CV2 ](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/CV2%20Intro)   
 
 ## Image Manipulation
 
@@ -109,13 +109,18 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 
 ## Contours
 
-- Detect and analyze contours in images for shape analysis.
+### Features:
+- **Grayscale Conversion**: Converts the input image to grayscale for easier processing.
+- **Thresholding**: Applies binary inverse thresholding to create a binary image suitable for contour detection.
+- **Contour Extraction**: Uses OpenCV's `findContours` to extract object contours from the thresholded image.
+- **Bounding Boxes**: Calculates and draws bounding rectangles around contours exceeding a specified area threshold.
+- **Dynamic Visualization**: Displays the original image with bounding boxes and the thresholded binary image for analysis.
 
   ---
   
 # Day 2: Detecting color with Python and OpenCV 
 
-This project uses OpenCV to detect and track objects of a specific color in real-time using a webcam feed. It processes frames to isolate the target color, highlights detected objects with bounding boxes, and displays the result.
+This project uses OpenCV to detect and track objects of a specific color in real-time using a webcam feed. It processes frames to isolate the target color, highlights detected objects with bounding boxes, and displays the result. [color detection](https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Projects/color-detection.py)
 
 ## Features
 
@@ -182,6 +187,8 @@ This project implements face detection and blurring using **OpenCV** and **Media
 
 # Day 5: Parking Spot Detection and Classification
 
+This project leverages Python and OpenCV to detect and classify parking spots in real-time. It processes video feeds or images to identify available and occupied parking spots,employing advanced image processing techniques to provide efficient parking management solutions. [Project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/image-classification)
+
 ## **Features**
 1. **Parking Spot Detection**  
    - Detect parking spots in video using a binary mask and extract regions of interest (ROIs).
@@ -207,7 +214,7 @@ This project implements face detection and blurring using **OpenCV** and **Media
 ---
 # Day 6: Emotion Detection with Python and OpenCV  
 
-This project utilizes Python, OpenCV, and face landmark detection to classify human emotions from images. It processes face images, extracts 1404 key landmarks, and organizes them into labeled datasets for emotion classification.  
+This project utilizes Python, OpenCV, and face landmark detection to classify human emotions from images. It processes face images, extracts 1404 key landmarks, and organizes them into labeled datasets for emotion classification. [Emotion detection project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Emotion%20detection)  
 
 ## **Features**  
 
@@ -235,7 +242,7 @@ This project utilizes Python, OpenCV, and face landmark detection to classify hu
 ---
 # Day 7: Image Classification and Feature Extraction with Python  
 
-This project leverages `Img2Vec` and a pre-trained Random Forest model to classify images into predefined categories. It extracts feature vectors from images, predicts their labels, and provides confidence scores for each classification.
+This project leverages `Img2Vec` and a pre-trained Random Forest model to classify images into predefined categories. It extracts feature vectors from images, predicts their labels, and provides confidence scores for each classification.[Image classification and feature extraction project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/img%20classification%20and%20extraction)
 
 ## **Features**  
 
@@ -263,7 +270,9 @@ This project leverages `Img2Vec` and a pre-trained Random Forest model to classi
 ---
 # Day 8: Building a Sign Language Detector with Python and OpenCV
 
-This project implements a real-time sign language detection system using OpenCV, MediaPipe, and a machine learning model. The system captures hand gestures via a webcam, processes them to extract features, and predicts corresponding sign language characters.
+This project implements a real-time sign language detection system using OpenCV, MediaPipe, and a machine learning model. The system captures hand gestures via a webcam, processes them to extract features, and predicts corresponding sign language characters. 
+[Sign Language Detection Project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Sign%20language%20detection)
+
 
 ## Features
 
@@ -313,9 +322,11 @@ This project implements a real-time sign language detection system using OpenCV,
 
 The system detects gestures and overlays predictions directly on the live video feed:
 <p align="center">
-  <img src="path_to_image1.jpg" alt="Image 1" width="45%">
-  <img src="path_to_image2.jpg" alt="Image 2" width="45%">
+  <img src="Projects/Sign%20language%20detection/outputs/B.png" alt="Image 1" height="300px">
+  <img src="Projects/Sign%20language%20detection/outputs/A.png" alt="Image 2" height="300px">
 </p>
+
+
 
 
 
