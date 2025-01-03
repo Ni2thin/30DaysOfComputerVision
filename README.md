@@ -261,7 +261,64 @@ This project leverages `Img2Vec` and a pre-trained Random Forest model to classi
   Easily extendable to add more categories or integrate advanced models for improved classification.  
 
 ---
-# Day 8:
+# Day 8: Building a Sign Language Detector with Python and OpenCV
+
+This project implements a real-time sign language detection system using OpenCV, MediaPipe, and a machine learning model. The system captures hand gestures via a webcam, processes them to extract features, and predicts corresponding sign language characters.
+
+## Features
+
+- **Dataset Creation**: Captures 100 images per class using the webcam for generating a labeled dataset.
+- **Feature Extraction**: Utilizes MediaPipe's hand landmarks to extract normalized hand features (x, y coordinates).
+- **Model Training**: Trains a Random Forest Classifier on the extracted features to distinguish between gestures.
+- **Real-Time Prediction**: Detects hand gestures in live webcam feed and overlays the predicted character on the video stream.
+- **Visualization**: Draws hand landmarks and bounding boxes around detected hands for intuitive visualization.
+- **Expandable Design**: Easy to extend with additional gestures or classes by adding new labeled data.
+
+## Workflow
+
+### 1. Data Collection
+- Webcam feed captures images for each gesture class.
+- Images are saved to class-specific directories.
+
+### 2. Model Training
+- Extracts hand landmarks and normalizes them.
+- Trains a Random Forest model on the features for classification.
+
+### 3. Real-Time Detection
+- Processes live webcam feed to detect and classify gestures.
+- Displays predictions with bounding boxes and labels.
+
+## Key Innovations
+
+- **Hand Landmarks**: MediaPipe's hand tracking ensures accurate gesture representation.
+- **Efficient Dataset Handling**: Automates data collection and preprocessing for rapid model training.
+- **Dynamic Prediction**: Real-time responsiveness allows seamless interaction with the system.
+- **Scalable Architecture**: Can be extended to support more complex sign language alphabets.
+
+## How to Use
+
+1. **Dataset Creation**:
+   - Run the data collection script to capture hand gesture images.
+   - Ensure each gesture has its own labeled folder in the dataset directory.
+
+2. **Model Training**:
+   - Run the training script to train the Random Forest Classifier.
+   - A trained model will be saved for later use.
+
+3. **Real-Time Detection**:
+   - Launch the detection script to start the webcam feed.
+   - The system will predict and display the corresponding gesture in real-time.
+
+## Example Output
+
+The system detects gestures and overlays predictions directly on the live video feed:
+<p align="center">
+  <img src="path_to_image1.jpg" alt="Image 1" width="45%">
+  <img src="path_to_image2.jpg" alt="Image 2" width="45%">
+</p>
+
+
+
 
 
 
