@@ -27,7 +27,7 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 6 | 01-01-2025  | Emotion detection with Python, OpenCV, and others    | [Emotion detection](https://www.youtube.com/watch?v=h0LoewzGzhc&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=8)                 |
 | Day 7 | 02-01-2025  | Image classification + feature extraction           | [Image classification + feature extraction](https://youtu.be/oEKg_jiV1Ng?feature=shared) |
 | Day 8 | 03-01-2025  | Sign language detection with Python and OpenCV       | [Sign language detection](https://youtu.be/MJCSjXepaAM?feature=shared)           |
-| Day 9 | 04-01-2025  | Image classification WEB APP with Python & Flask     | [Image classification web app](link)      |
+| Day 9 | 04-01-2025  | Image classification WEB APP with Python & Flask     | [Image classification web app](https://youtu.be/n_eMARPqBZI?feature=shared)      |
 | Day 10 | 05-01-2025 | AWS Rekognition tutorial (Object detection)      | [AWS Rekognition](link)                   |
 | Day 11 | 06-01-2025 | Yolov8 object tracking 100% native                   | [Yolov8 object tracking](link)            |
 | Day 12 | 07-01-2025 | Image segmentation with Yolov8 custom dataset       | [Image segmentation with Yolov8](link)    |
@@ -326,6 +326,8 @@ The system detects gestures and overlays predictions directly on the live video 
   <img src="Projects/Sign%20language%20detection/outputs/A.png" alt="Image 2" height="300px">
 </p>
 
+---
+# Day 9:
 
 
 
