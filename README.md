@@ -327,7 +327,7 @@ The system detects gestures and overlays predictions directly on the live video 
 </p>
 
 ---
-# Day 9:
+# Day 9: Pneumonia Classification : simple web app
 
 
 
