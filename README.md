@@ -28,9 +28,9 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 7 | 02-01-2025  | Image classification + feature extraction           | [Image classification + feature extraction](https://youtu.be/oEKg_jiV1Ng?feature=shared) |
 | Day 8 | 03-01-2025  | Sign language detection with Python and OpenCV       | [Sign language detection](https://youtu.be/MJCSjXepaAM?feature=shared)           |
 | Day 9 | 04-01-2025  | Image classification WEB APP with Python & Flask     | [Image classification web app](https://youtu.be/n_eMARPqBZI?feature=shared)      |
-| Day 10 | 05-01-2025 | AWS Rekognition tutorial (Object detection)      | [AWS Rekognition](link)                   |
-| Day 11 | 06-01-2025 | Yolov8 object tracking 100% native                   | [Yolov8 object tracking](link)            |
-| Day 12 | 07-01-2025 | Image segmentation with Yolov8 custom dataset       | [Image segmentation with Yolov8](link)    |
+| Day 10 | 05-01-2025 | AWS Rekognition tutorial (Object detection)      | [AWS Rekognition](https://www.youtube.com/watch?v=C9H_v44670s)                   |
+| Day 11 | 06-01-2025 | Yolov8 object tracking 100% native                   | [Yolov8 object tracking](https://youtu.be/uMzOcCNKr5A?feature=shared)            |
+| Day 12 | 07-01-2025 | Image segmentation with Yolov8 custom dataset       | [Image segmentation with Yolov8](https://youtu.be/aVKGjzAUHz0?feature=shared)    |
 | Day 13 | 08-01-2025 | Train pose detection Yolov8 on custom dataset        | [Train pose detection Yolov8](link)       |
 | Day 14 | 09-01-2025 | Parking spot detection and counter                   | [Parking spot detection](link)            |
 | Day 15 | 10-01-2025 | Train Yolov10 object detection custom dataset        | [Train Yolov10 object detection](link)    |
