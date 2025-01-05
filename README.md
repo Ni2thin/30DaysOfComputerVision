@@ -358,7 +358,50 @@ This project utilizes Python and Keras to classify chest X-ray images as either 
 - [Download Dataset from Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data)
 - [Teachable Machine](https://teachablemachine.withgoogle.com/)
 ---
-# Day 10:
+# Day 10: Object detection using AWS Rekognition 
+
+This project demonstrates the use of AWS Rekognition to detect objects in a video stream. Specifically, it identifies instances of a target class (`Zebra` in this example) and saves the bounding box annotations and corresponding frames. The implementation leverages AWS Rekognition's label detection capabilities to process video frames and extract object information.
+
+## **Features**
+1. **Frame Processing and Object Detection**
+   - Reads video frames using OpenCV.
+   - Sends each frame to AWS Rekognition for object detection.
+   - Identifies and processes instances of the target class (`Zebra`).
+
+2. **Bounding Box Annotation**
+   - Extracts bounding box details (center coordinates, width, and height) for the detected objects.
+   - Saves annotations in YOLO-compatible format as text files for each frame.
+
+3. **Frame Output Storage**
+   - Saves each processed video frame as an image in a designated directory.
+   - Frames are named sequentially for easy reference.
+
+4. **Customizable Target Class**
+   - Allows users to specify a different target object class by modifying the `target_class` variable.
+
+5. **AWS Rekognition Integration**
+   - Utilizes AWS Rekognition’s `detect_labels` API for high-confidence object detection.
+   - Customizable minimum confidence threshold for detections.
+
+## **Usage**
+### Prerequisites
+1. AWS Rekognition credentials:
+   - Ensure you have an active AWS account with access to Rekognition services.
+   - Replace the placeholders in `credentials.py` with your AWS Access Key and Secret Key:
+     ```python
+     access_key = "YOUR_AWS_ACCESS_KEY"
+     secret_key = "YOUR_AWS_SECRET_KEY"
+     ```
+
+2. Install the required Python libraries:
+   ```bash
+   pip install boto3 opencv-python
+   ```
+   ---
+# Day 11:  
+   
+   
+
 
 
 
