@@ -327,7 +327,38 @@ The system detects gestures and overlays predictions directly on the live video 
 </p>
 
 ---
-# Day 9: Pneumonia Classification : simple web app
+# Day 9: Pneumonia Classification - Simple web app
+
+This project utilizes Python and Keras to classify chest X-ray images as either showing signs of pneumonia or being normal. The model is trained using the Teachable Machine platform, and the dataset is taken from Kaggle's Chest X-Ray dataset. The goal is to assist in the identification of pneumonia cases using deep learning. [Project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Pneumonia%20classification)
+
+## **Features**
+1. **Pneumonia Detection**  
+   - Classify chest X-ray images into two categories: `Pneumonia` and `Normal`.
+   - Use pre-trained models fine-tuned with a custom dataset to provide accurate results.
+
+2. **Prediction Confidence**  
+   - Displays the model's confidence in the prediction as a percentage.
+   - Provide a progress bar for an interactive user experience.
+
+3. **Real-Time Upload and Prediction**  
+   - Upload a chest X-ray image and get an immediate prediction for pneumonia classification.
+   - Show prediction results on the app with a confidence score.
+
+4. **User-Friendly Interface**  
+   - The web app is designed with a simple and intuitive UI, allowing users to easily upload and classify chest X-ray images.
+   - Streamlit is used to build an interactive and seamless user experience.
+
+### **Output**
+<p align="center">
+  <img src="Projects/Pneumonia classification/output/output.png" alt="Image 1" height="300px">
+  <img src="Projects/Pneumonia classification/output/output2.png" alt="Image 2" height="300px">
+</p>
+
+### **Assets**
+- [Download Dataset from Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data)
+- [Teachable Machine](https://teachablemachine.withgoogle.com/)
+---
+# Day 10:
 
 
 
