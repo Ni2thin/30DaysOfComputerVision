@@ -397,8 +397,31 @@ This project demonstrates the use of AWS Rekognition to detect objects in a vide
    ```bash
    pip install boto3 opencv-python
    ```
-   ---
-# Day 11:  
+   --- 
+# Day 11: Object Detection with YOLO and OpenCV
+
+This project demonstrates how to use the YOLO (You Only Look Once) model from the Ultralytics library to perform real-time object detection on a video file. It processes video frames, applies YOLO for object detection, and displays the results with bounding boxes and annotations.
+
+## Features
+
+- **Pretrained YOLO Models**: Utilizes the YOLOv8 model (`yolov8n.pt`) for lightweight and fast object detection.  
+- **Video File Input**: Processes video frames from a local file (`cat.mp4`).  
+- **Real-Time Detection**: Performs real-time object detection on each frame with high accuracy.  
+- **Dynamic Visualization**: Displays detected objects with bounding boxes and labels overlaid on the video.  
+- **Customizable Models**: Replace `yolov8n.pt` with other YOLO weights (`yolov8s.pt`, `yolov8m.pt`, etc.) for higher precision.  
+- **Fail-Safe Video Handling**: Checks and handles errors if the video file cannot be opened or frames cannot be read.  
+- **Interactive Interface**: Press `q` to exit the visualization during playback.
+
+## Prerequisites
+
+- Python 3.8 or later
+- Install required libraries:
+  ```bash
+  pip install ultralytics opencv-python
+  ```
+  ---
+ # Day 12:
+
    
    
 
