@@ -400,7 +400,7 @@ This project demonstrates the use of AWS Rekognition to detect objects in a vide
    --- 
 # Day 11: Object Detection with YOLO and OpenCV
 
-This project demonstrates how to use the YOLO (You Only Look Once) model from the Ultralytics library to perform real-time object detection on a video file. It processes video frames, applies YOLO for object detection, and displays the results with bounding boxes and annotations.
+This project demonstrates how to use the YOLO (You Only Look Once) model from the Ultralytics library to perform real-time object detection on a video file. It processes video frames, applies YOLO for object detection, and displays the results with bounding boxes and annotations. [link](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Object%20detection%20using%20YOLO)
 
 ## Features
 
