@@ -242,7 +242,7 @@ This project utilizes Python, OpenCV, and face landmark detection to classify hu
 ---
 # Day 7: Image Classification and Feature Extraction with Python  
 
-This project leverages `Img2Vec` and a pre-trained Random Forest model to classify images into predefined categories. It extracts feature vectors from images, predicts their labels, and provides confidence scores for each classification.[Image classification and feature extraction project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/img%20classification%20and%20extraction)
+This project leverages `Img2Vec` and a pre-trained Random Forest model to classify images into predefined categories. It extracts feature vectors from images, predicts their labels, and provides confidence scores for each classification. [Image classification and feature extraction project](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/img%20classification%20and%20extraction)
 
 ## **Features**  
 
@@ -422,7 +422,7 @@ This project demonstrates how to use the YOLO (You Only Look Once) model from th
 ---
 # Day 12: Image segmentation with Yolov8 and Segment Anything Model(SAM) 
 
-This project demonstrates how to detect and segment objects in an image using **YoloV8** for object detection, **Segment Anything Model (SAM)** for segmentation, and finally removing the background. [link]()
+This project demonstrates how to detect and segment objects in an image using **YoloV8** for object detection, **Segment Anything Model (SAM)** for segmentation, and finally removing the background. [link](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Image%20segmentation%20using%20yolov8%20and%20SAM)
 
 ## Steps
 
