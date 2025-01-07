@@ -419,9 +419,56 @@ This project demonstrates how to use the YOLO (You Only Look Once) model from th
   ```bash
   pip install ultralytics opencv-python
   ```
-  ---
- # Day 12:
+---
+# Day 12: Image segmentation with Yolov8 and Segment Anything Model(SAM) 
 
+This project demonstrates how to detect and segment objects in an image using **YoloV8** for object detection, **Segment Anything Model (SAM)** for segmentation, and finally removing the background. [link]()
+
+## Steps
+
+### 1. Install Dependencies
+
+Install YoloV8 and SAM, and download the SAM model checkpoint.
+```bash
+!pip install ultralytics
+!pip install 'git+https://github.com/facebookresearch/segment-anything.git'
+!wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+```
+### 2. Object Detection with YoloV8
+
+Detect objects in the image.
+
+```bash
+!yolo predict model=yolov8n.pt source='your-image.jpeg'
+```
+- visualize detection
+  ``` python
+  Image(filename='/content/runs/detect/predict/your-image.jpg', height=600)
+  ```
+### 3. Segmentation with SAM
+
+Use SAM to segment objects based on YoloV8 bounding boxes.
+Visualize segmentation results:
+
+```python
+masks, _, _ = predictor.predict(box=input_box[None, :], multimask_output=False)
+plt.imshow(image)
+show_mask(masks[0], plt.gca())
+plt.show()
+```
+### 4. Background Removal
+
+Create a binary mask and isolate the object:
+
+``` python
+binary_mask = np.where(segmentation_mask > 0.5, 1, 0)
+new_image = (255 * (1 - binary_mask[..., None]) + image * binary_mask[..., None])
+plt.imshow(new_image.astype(np.uint8))
+plt.axis('off')
+plt.show()
+```
+---
+# Day 13:
    
    
 
