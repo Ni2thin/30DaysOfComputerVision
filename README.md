@@ -468,8 +468,60 @@ plt.axis('off')
 plt.show()
 ```
 ---
-# Day 13:
-   
+# Day 13: Pose Detection and Rep Counter
+
+## Overview
+This project utilizes **OpenCV** and **MediaPipe** to perform real-time pose detection and calculate the angles of arm movements for fitness tracking. The system detects arm curls, tracks the number of repetitions for each arm, and provides a live visual feed with overlaid information. [link](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/AI%20Pose%20Estimation%20for%20gym)
+
+## Features
+- **Real-Time Pose Detection:** Detects human poses using MediaPipe's Pose solution.
+- **Angle Calculation:** Calculates joint angles to determine arm movement stages (e.g., "up" or "down").
+- **Repetition Counter:** Tracks and counts curls for both left and right arms.
+- **Camera Flipping:** Mirrors the video feed for a natural user experience.
+- **On-Screen Visuals:**
+  - Real-time joint angles.
+  - Left and right arm repetition counts.
+  - Frames Per Second (FPS).
+  - Instructions for pausing or quitting.
+- **Data Logging:** Saves the final repetition counts to a text file (`reps_data.txt`).
+
+## Curl Logic
+The repetition counter uses the calculated angle of the elbow joint to determine the arm's movement stages ("up" or "down") and to count completed curls.
+
+1. **Landmark Detection:**
+   - Extract the coordinates of the shoulder, elbow, and wrist for each arm using MediaPipe landmarks.
+
+2. **Angle Calculation:**
+   - Calculate the angle at the elbow joint using the formula:
+      angle = | atan2(c_y - b_y, c_x - b_x) - atan2(a_y - b_y, a_x - b_x) | × 180/π
+
+     where:
+     - `a`, `b`, and `c` are the shoulder, elbow, and wrist coordinates, respectively.
+
+3. **Movement Stages:**
+   - If the angle exceeds 160°, the arm is considered **"down"** (extended).
+   - If the angle drops below 30° and the arm was previously "down," the arm is considered **"up"** (flexed).
+
+4. **Increment Counter:**
+   - Transitioning from "down" to "up" increments the repetition counter.
+
+## Instructions
+1. Run the script.
+2. Perform arm curls in front of the camera.
+3. View real-time feedback, including repetitions and angles.
+4. Press `P` to pause or `Q` to quit.
+5. Check the `reps_data.txt` file for a summary of your session.
+
+
+## Use Cases
+- Fitness tracking for arm workouts.
+- Pose analysis for personal or professional fitness training.
+- Real-time feedback for improving exercise form.
+
+This project provides a foundation for fitness applications with advanced pose estimation features.
+
+---
+# Day 14
    
 
 
