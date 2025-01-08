@@ -31,8 +31,8 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 10 | 05-01-2025 | AWS Rekognition tutorial (Object detection)      | [AWS Rekognition](https://www.youtube.com/watch?v=C9H_v44670s)                   |
 | Day 11 | 06-01-2025 | Yolov8 object tracking 100% native                   | [Yolov8 object tracking](https://youtu.be/uMzOcCNKr5A?feature=shared)            |
 | Day 12 | 07-01-2025 | Image segmentation with Yolov8 and Segment Anything Model(SAM)  | [Image segmentation with Yolov8](https://www.youtube.com/watch?v=aYP4ujUsGdk)    |
-| Day 13 | 08-01-2025 | Train pose detection Yolov8 on custom dataset        | [Train pose detection Yolov8](link)       |
-| Day 14 | 09-01-2025 | Parking spot detection and counter                   | [Parking spot detection](link)            |
+| Day 13 | 08-01-2025 | Train pose detection Yolov8 on custom dataset        | [Train pose detection Yolov8](https://www.youtube.com/watch?v=gA5N54IO1ko&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=14)       |
+| Day 14 | 09-01-2025 | Parking spot detection and counter                   | [Parking spot detection](https://www.youtube.com/watch?v=F-884J2mnOY&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=15&pp=iAQB)            |
 | Day 15 | 10-01-2025 | Train Yolov10 object detection custom dataset        | [Train Yolov10 object detection](link)    |
 | Day 16 | 11-01-2025 | End to end pipeline real world computer vision       | [End to end pipeline](link)               |
 | Day 17 | 12-01-2025 | Image processing API with AWS API Gateway            | [Image processing API](link)              |
