@@ -521,8 +521,48 @@ The repetition counter uses the calculated angle of the elbow joint to determine
 This project provides a foundation for fitness applications with advanced pose estimation features.
 
 ---
-# Day 14
-   
+# Day 14:Parking Spot Detection System
+
+A computer vision-based solution to detect parking spot availability, designed for versatile use cases, including Indian parking scenarios. [link.](https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Projects/image-classification/Parking%20spot%20detection/improved-parking-spot-detection.py)
+
+## Features
+
+- **Dynamic Configuration**: Use command-line arguments for mask and video paths.
+- **Optimized Processing**: Configurable frame skipping (`--step`) and sensitivity (`--diff_threshold`).
+- **Indian Context Support**: Handles compact spaces, irregular layouts, and lighting variations.
+- **Real-Time Visualization**: Color-coded bounding boxes for parking spots.
+- **Modular Design**: Easily adaptable for live feeds or IoT integration.
+
+## Installation
+
+Clone the repository:
+   ```bash
+   git clone https://github.com/Ni2thin/30DaysOfComputerVision.git
+   cd Projects/image-classification/Parking spot detection/improved-parking-spot-detection.py
+```
+## Command-Line Arguments
+
+| Argument          | Description                                    | Default    |
+|--------------------|------------------------------------------------|------------|
+| `--mask`          | Path to the binary mask image.                | Required   |
+| `--video`         | Path to the video file.                       | Required   |
+| `--step`          | Frame processing interval.                    | `30`       |
+| `--diff_threshold`| Threshold for detecting spot changes.         | `0.4`      |
+
+## Output
+
+- **Visualization**: 
+  - Green boxes for available spots, red for occupied.
+- **Console Logs**: Spot change metrics and parking availability.
+
+## Limitations
+
+- **Lighting Sensitivity**: Adjust `--diff_threshold` for shadows or glare.
+- **Mask-Video Alignment**: Ensure perfect alignment for accurate detection.
+- **Camera Angle**: Best results with top-down or high-angle views.
+---
+# Day 15:
+ 
 
 
 
