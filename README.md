@@ -33,8 +33,8 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 12 | 07-01-2025 | Image segmentation with Yolov8 and Segment Anything Model(SAM)  | [Image segmentation with Yolov8](https://www.youtube.com/watch?v=aYP4ujUsGdk)    |
 | Day 13 | 08-01-2025 | Pose detection using webcam      | [Train pose detection ](https://www.youtube.com/watch?v=06TE_U21FK4)       |
 | Day 14 | 09-01-2025 | Parking spot detection and counter                   | [Parking spot detection](https://www.youtube.com/watch?v=F-884J2mnOY&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd&index=15&pp=iAQB)            |
-| Day 15 | 10-01-2025 | Train Yolov10 object detection custom dataset        | [Train Yolov10 object detection](link)    |
-| Day 16 | 11-01-2025 | End to end pipeline real world computer vision       | [End to end pipeline](link)               |
+| Day 15 | 10-01-2025 | Train Yolov10 object detection custom dataset        | [Train Yolov10 object detection](https://www.youtube.com/watch?v=PfQwNe0P-G4)    |
+| Day 16 | 11-01-2025 | End to end pipeline real world computer vision       | [End to end pipeline](https://youtu.be/xgtujvjKIGs?feature=shared)               |
 | Day 17 | 12-01-2025 | Image processing API with AWS API Gateway            | [Image processing API](link)              |
 | Day 18 | 13-01-2025 | How much data you need to train a computer vision model | [How much data to train cv](link)                 |
 | Day 19 | 14-01-2025 | Real world application of computer vision           | [Real world application](link)            |
