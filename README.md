@@ -521,9 +521,9 @@ The repetition counter uses the calculated angle of the elbow joint to determine
 This project provides a foundation for fitness applications with advanced pose estimation features.
 
 ---
-# Day 14:Parking Spot Detection System
+# Day 14: Parking Spot Detection System
 
-A computer vision-based solution to detect parking spot availability, designed for versatile use cases, including Indian parking scenarios. [link.](https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Projects/image-classification/Parking%20spot%20detection/improved-parking-spot-detection.py)
+A computer vision-based solution to detect parking spot availability, designed for versatile use cases, including Indian parking scenarios [link.](https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Projects/image-classification/Parking%20spot%20detection/improved-parking-spot-detection.py)
 
 ## Features
 
@@ -561,7 +561,59 @@ Clone the repository:
 - **Mask-Video Alignment**: Ensure perfect alignment for accurate detection.
 - **Camera Angle**: Best results with top-down or high-angle views.
 ---
-# Day 15:
+# Day 15: Object detection using YOLOv10 with custom data
+
+ This project demonstrates how to build a custom object detector using YOLOv10, from dataset creation to deploying a functional model. It emphasizes the iterative nature of training and evaluation to achieve reliable real-world performance. [link](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Object%20detection%20using%20YOLOv10)
+
+## key steps:  
+- Data collection  
+- Data annotation  
+- Preparing the dataset  
+- Training the model  
+- Evaluating the model  
+- Making predictions  
+
+ Here the dataset focuses on images of ducks, demonstrating the importance of a structured approach to train an effective object detection model.
+
+## Data Collection  
+- **Dataset Description**: Images of ducks in various sizes, colors, and backgrounds.  
+- **Importance**: A large and diverse dataset enhances the model's generalization capabilities.  
+- **Recommendations**: Collect hundreds to thousands of images with variations in lighting, angles, and environments.  
+
+## Data Annotation  
+- **Tool Used**: CVAT (Computer Vision Annotation Tool).  
+- **Process**: Annotate images by drawing bounding boxes around ducks.  
+- **Tips**: Define clear criteria for bounding boxes to ensure consistency and accuracy during training.  
+
+## Preparing the Data  
+- **Folder Structure**: Organize data into `training` and `validation` folders.  
+- **Naming Conventions**: Use clear and consistent file names to avoid errors.  
+- **YOLO Format**:  
+  - Class ID  
+  - Bounding box coordinates (x, y, width, height, normalized).  
+
+## Training the Model  
+- **Setup**: Train locally or on Google Colab for efficiency.  
+- **Steps**:  
+  1. Upload dataset.  
+  2. Install dependencies.  
+  3. Configure dataset paths.  
+- **Monitoring**: Observe loss functions and accuracy metrics during training.  
+
+## Evaluating the Model  
+- **Post-Training Evaluation**:  
+  - Analyze loss functions and accuracy to assess model quality.  
+  - Compare predictions to ground truth data for insights.  
+- **Improvement Suggestions**: Refine the dataset and training parameters iteratively.  
+
+## Making Predictions  
+- **Prediction Script**: Apply the trained model on video frames.  
+- **Output**: Draw bounding boxes around detected ducks in videos.  
+- **Evaluation in Real Scenarios**: Test the model's robustness and identify areas for further optimization.  
+
+--- 
+# Day 16:
+
  
 
 
