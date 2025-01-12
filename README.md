@@ -612,8 +612,63 @@ Clone the repository:
 - **Evaluation in Real Scenarios**: Test the model's robustness and identify areas for further optimization.  
 
 --- 
-# Day 16:
+# Day 16: Building an End-to-End Computer Vision Project Pipeline  
 
+## **Introduction**  
+- **Focus**: Developing a pipeline for an **image background removal** application.  
+- **Pipeline Stages**: Requirements, Planning, Execution, Testing, and Delivery.  
+- **Importance**: Ensures efficient, risk-minimized, and client-aligned project delivery.  
+
+
+## **1. Requirements Gathering**  
+- Gather **client specifications**: budget, project description, and outputs.  
+- Example: "Build an image background removal model and serve it via an API."  
+- **Constraints**:  
+  - Single-person images.  
+  - Open-source resources preferred to reduce costs.  
+
+
+## **2. Planning Phase**  
+- **State-of-the-Art Review**: Research repositories, papers, and technologies.  
+- **Implementation Plan**: Tasks include algorithm setup, API development, and documentation.  
+- **Key Tasks**:  
+  - Identify existing resources for background removal (e.g., **REM BG**).  
+  - Decide on custom or pre-existing algorithms.  
+  - Prepare API for model serving.  
+  - Plan testing and documentation.  
+
+
+## **3. Execution Phase**  
+- Conduct a **State-of-the-Art Review**.  
+- **Implement the Algorithm**: Use repositories like **REM BG** for streamlined development.  
+- **Testing the Implementation**: Validate with sample images.  
+- **Observations**:  
+  - Implementation was faster than estimated.  
+  - Risks identified for algorithm adjustments.  
+
+
+## **4. Testing and Integration**  
+- Use tools like **FastAPI** and **NGINX** for API setup.  
+- Validate API-model communication and troubleshoot (e.g., S3 bucket errors).  
+
+
+## **5. Deliverables Preparation**  
+- **Deliverables include**:  
+  - **API documentation**: Endpoints and usage instructions.  
+  - Retraining guidelines for the client.  
+- Ensure seamless integration and usability for the client.  
+
+
+## **Conclusion**  
+- **Key Steps**: Requirements, Planning, Execution, Testing, Delivery.  
+- **Benefits**: Risk reduction, timely delivery, and high-quality results.  
+- **Significance**: A structured pipeline equips professionals with skills to handle complex real-world projects.  
+
+
+ <img src="https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Images/simplified_pipeline.png" width="1050" height="500"/>
+
+ ---
+ # Day 17: Image processing API with AWS API Gateway 
  
 
 
