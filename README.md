@@ -731,7 +731,7 @@ Here, the API processes images, illustrating how to utilize AWS for computer vis
 
 
 --- 
-# Day 17: 
+# Day 18: 
 
 
 
