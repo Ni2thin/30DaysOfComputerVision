@@ -668,10 +668,70 @@ Clone the repository:
  <img src="https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Images/simplified_pipeline.png" width="1050" height="500"/>
 
  ---
- # Day 17: Image processing API with AWS API Gateway 
- 
+# Day 17: Building an Image Processing API with AWS  
+
+This project demonstrates how to create a basic image processing API using AWS. It focuses on converting images from BGR to grayscale, guiding through AWS Lambda, S3, and API Gateway integration. The project emphasizes the importance of mastering cloud-based APIs for scalable real-world applications.  
+
+### Key Steps:  
+- Understanding AWS components  
+- Writing the Python script  
+- Setting up the Lambda function  
+- Integrating with API Gateway  
+- Testing the API  
+
+Here, the API processes images, illustrating how to utilize AWS for computer vision tasks while emphasizing scalability and modularity.  
+
+### Understanding AWS Components  
+
+**Key Services**:  
+1. **Lambda Functions**: Serverless computing for backend tasks.  
+2. **S3 Buckets**: Storing and retrieving image data.  
+3. **API Gateway**: Managing client-server communication.  
 
 
+### Writing the Python Script  
+
+- **Script Functionality**:  
+  - Reads images in Base64 format.  
+  - Converts them to grayscale using OpenCV.  
+  - Encodes output back to Base64.  
+
+- **Focus**: Test the script locally before deploying.  
+
+
+### Setting Up the Lambda Function  
+
+**Process**:  
+1. **Create Function**: Name it (e.g., "ImageProcessor") and choose Python runtime.  
+2. **Add Logic**: Implement decoding, grayscale conversion, and re-encoding.  
+3. **Test Locally**: Simulate API input and output.  
+
+**Tips**:  
+- Ensure image encoding follows API standards.  
+- Address dependencies like OpenCV and NumPy using S3 Lambda layers.  
+
+
+### Integrating with API Gateway  
+
+1. **Create API**: Define POST method for image processing.  
+2. **Link Lambda**: Attach the function to the API.  
+3. **Deploy**: Publish the API for external use.  
+
+
+### Testing the API  
+
+- **Input**: Base64-encoded images.  
+- **Output**: Grayscale images returned in Base64 format.  
+- **Debugging**: Handle errors (e.g., missing libraries or API misconfigurations).  
+
+### Key Takeaways  
+- Mastering Python, OpenCV, and AWS is critical for scalable applications.  
+- Building cloud-based APIs enhances developer skill sets for real-world computer vision tasks.  
+- Iterative testing ensures API reliability and performance.  
+
+
+--- 
+# Day 17: 
 
 
 
