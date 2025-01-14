@@ -37,7 +37,7 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 16 | 11-01-2025 | End to end pipeline real world computer vision       | [End to end pipeline](https://youtu.be/xgtujvjKIGs?feature=shared)               |
 | Day 17 | 12-01-2025 | Image processing API with AWS API Gateway            | [Image processing API](https://www.youtube.com/watch?v=iUoiBRwyIBg)              |
 | Day 18 | 13-01-2025 | How much data you need to train a computer vision model | [How much data to train cv](https://youtu.be/8YXk_zcllC8?feature=shared)                 |
-| Day 19 | 14-01-2025 | Real world application of computer vision           | [Real world application](link)            |
+| Day 19 | 14-01-2025 | Real world application of computer vision           | [Real world application](https://youtu.be/OP8AozaEuLM?feature=shared)            |
 | Day 20 | 15-01-2025 | Train Detectron2 object detection custom dataset     | [Train Detectron2](link)                  |
 | Day 21 | 16-01-2025 | Face recognition on your webcam with Python & OpenCV | [Face recognition](link)                  |
 | Day 22 | 17-01-2025 | Face attendance + face recognition with OpenCV      | [Face attendance](link)                   |
@@ -731,7 +731,61 @@ Here, the API processes images, illustrating how to utilize AWS for computer vis
 
 
 --- 
-# Day 18: 
+# Day 18: Evaluating Data Requirements for Training Machine Learning Models (theory)
+
+## Introduction
+- Focus: Investigating the data needed to train an **object detection model** using **YOLOv8**.
+- Key insight: More data doesn't always mean better performance; efficient data use can reduce costs and maintain accuracy.
+- Concepts introduced:
+  - **Object Detection**: Identifying objects in images.
+  - **YOLOv8**: Real-time object detection algorithm.
+  - **Mean Average Precision (mAP)**: Accuracy metric for object detection.
+  - **Training Epochs**: Complete passes through the training dataset.
+
+## Understanding the Experiment
+- Experiment involves training a model with datasets of varying sizes: 10, 50, 100, 200, 500, 1,000, 2,000, and 4,000 images.
+- Objectives:
+  - Assess performance (mAP) and efficiency against dataset sizes.
+  - Identify the minimal dataset size for satisfactory accuracy.
+
+## Experimental Setup
+- Data sampled from Google Open Images Dataset Version 7.
+- Consistent training methodology:
+  - **20 epochs** for training each model.
+  - Fixed test set of **100 images** for performance evaluation.
+
+## Analysis of Results
+### Performance Metrics
+1. **mAP vs. Dataset Size**:
+   - mAP increases with dataset size: **60% (10 images)** to **91.1% (4,000 images)**.
+   - Marginal improvements with larger datasets.
+2. **Training Time vs. Dataset Size**:
+   - Training time grows exponentially with dataset size.
+   - Training with 4,000 images is 7x slower than with 500 images, for only a **0.05% mAP** gain.
+
+### Key Observations
+- **Diminishing Returns**: Accuracy gains decrease as dataset size increases.
+- **Practical Constraints**: Time and resource costs must be balanced against performance benefits.
+
+## Real-World Implications
+- Models tested on videos of ducks in various scenarios:
+  - Models trained with fewer images (10–50) failed.
+  - Models trained with 100 images showed errors.
+  - Models with 2,000–4,000 images performed best.
+
+### Video Analysis Insights
+- Metrics like mAP can be misleading without real-world validation.
+- A model with **73% mAP** may still fail in practical scenarios.
+
+## Conclusion
+### Main Takeaways
+- **Optimal Data Usage**: Balance dataset size and accuracy to minimize effort and cost.
+- **Efficiency Matters**: Training resources must justify performance improvements.
+- **Metrics vs. Reality**: Validate models in real-world settings to align statistics with practical outcomes.
+
+--- 
+# Day 19:
+
 
 
 
