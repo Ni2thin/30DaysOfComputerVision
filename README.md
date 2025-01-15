@@ -38,7 +38,7 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 17 | 12-01-2025 | Image processing API with AWS API Gateway            | [Image processing API](https://www.youtube.com/watch?v=iUoiBRwyIBg)              |
 | Day 18 | 13-01-2025 | How much data you need to train a computer vision model | [How much data to train cv](https://youtu.be/8YXk_zcllC8?feature=shared)                 |
 | Day 19 | 14-01-2025 | Real world application of computer vision           | [Real world application](https://youtu.be/OP8AozaEuLM?feature=shared)            |
-| Day 20 | 15-01-2025 | Train Detectron2 object detection custom dataset     | [Train Detectron2](link)                  |
+| Day 20 | 15-01-2025 | Train Detectron2 object detection custom dataset     | [Train Detectron2](https://youtu.be/I7O4ymSDcGw?feature=shared)                  |
 | Day 21 | 16-01-2025 | Face recognition on your webcam with Python & OpenCV | [Face recognition](link)                  |
 | Day 22 | 17-01-2025 | Face attendance + face recognition with OpenCV      | [Face attendance](link)                   |
 | Day 23 | 18-01-2025 | Machine learning with AWS practical projects        | [ML with AWS](link)                       |
