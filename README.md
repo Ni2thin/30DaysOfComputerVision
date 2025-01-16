@@ -833,9 +833,10 @@ Here, the API processes images, illustrating how to utilize AWS for computer vis
 
 ### **Output**
 <p align="center">
-  <img src="Projects/Invoice logo detection/predictions/invoice data1.png" alt="Image 1" height="300px">
-  <img src="Projects/Invoice logo detection/predictions/P_curve.png" alt="Image 2" height="300px">
+  <img src="Projects/Invoice logo detection/predictions/invoice data1.png" alt="Image 1" width="400px" height="300px">
+  <img src="Projects/Invoice logo detection/predictions/P_curve.png" alt="Image 2" width="400px" height="300px">
 </p>
+
 
 ### **Assets**
 - [Download pre-trained model](https://drive.google.com/drive/u/0/folders/1C3f9GGltuiRzsaexSyX36AlZBOeLn1Mc)
