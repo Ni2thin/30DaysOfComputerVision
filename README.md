@@ -785,41 +785,62 @@ Here, the API processes images, illustrating how to utilize AWS for computer vis
 
 --- 
 # Day 19: Invoice Logo Detection with YOLO
-
-## Project Overview
-- Automates detection of invoice logos using YOLO.
-- Includes synthetic dataset generation and evaluation of the trained model.
+ This project involves Automating invoice logo detection using YOLOv5, featuring synthetic dataset generation with robust annotation and evaluation workflows.
+  [link.](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Invoice%20logo%20detection)
 
 ## Features
-- **Synthetic Dataset Creation**: Places logos on random backgrounds at varying sizes and positions.
-- **YOLO Annotations**: Generates bounding box annotations for training.
-- **Model Evaluation**: Tests on synthetic and real-world images.
+- **Synthetic Dataset Creation**:
+  - Dynamically places logos onto background images with randomized scaling and positioning.
+  - Ensures diversity by applying random transformations to logos.
+- **YOLO-Compatible Annotations**:
+  - Generates bounding box labels in YOLO format for seamless integration.
+- **Model Evaluation**:
+  - Tests the trained model on both synthetic and real-world datasets.
 
-## Workflow
+### Workflow
 1. **Synthetic Dataset Generation**:
-   - Resizes and places logos randomly on backgrounds.
-   - Generates YOLO-format annotations.
+   - Logos are resized and placed randomly on background images.
+   - Outputs include annotated images and YOLO-compatible `.txt` files.
 2. **Model Training**:
-   - Trains YOLO on the synthetic dataset.
-3. **Testing**:
-   - Evaluates the trained model on test images.
-   - Displays predictions with bounding boxes and labels.
+   - Custom YOLO model is trained using the generated synthetic dataset.
+   - Optimized for object detection performance.
+3. **Testing and Evaluation**:
+   - Evaluates detection accuracy on test images.
+   - Visualizes predictions with bounding boxes and confidence scores.
 
-## Key Highlights
-- **Randomized Scaling and Positioning**: Ensures diverse training data.
-- **YOLO Integration**: Facilitates real-time logo detection.
-- **Expandable Design**: Add more logos or backgrounds to scale the project.
+### Key Technical Highlights
+- **Dynamic Image Synthesis**:
+  - Randomized scaling (25%-50% of the background-size) ensures diverse training samples.
+  - Alpha channel handling for logo transparency.
+- **YOLO Integration**:
+  - Bounding boxes normalized for YOLO compatibility (center_x, center_y, width, height).
+- **Scalability**:
+  - Supports adding new logos and backgrounds with minimal configuration.
 
-## How to Use
-1. **Dataset Creation**:
-   - Run the script to generate synthetic images and annotations.
-2. **Model Training**:
-   - Train YOLO using the generated dataset.
-3. **Testing**:
-   - Use the trained model to detect logos on test images.
+### How to Use
+1. **Generate Synthetic Dataset**:
+   - Run the dataset creation script to produce labelled images and annotations.
+2. **Train the YOLO Model**:
+   - Use the synthetic dataset to train a YOLO model.
+   - Save the trained weights for inference.
+3. **Perform Logo Detection**:
+   - Use the trained model to detect logos in unseen images.
+   - Visualize bounding boxes and labels directly on images.
 
-## Example Output
-- Synthetic logo placement and YOLO predictions on test images.
+### Visualization
+- Bounding boxes highlight detected logos with class labels for clarity.
+- Confidence scores aid in assessing detection reliability.
+
+### **Output**
+<p align="center">
+  <img src="Projects/Invoice logo detection/predictions/invoice data1.png" alt="Image 1" height="300px">
+  <img src="Projects/Invoice logo detection/predictions/P_curve.png" alt="Image 2" height="300px">
+</p>
+
+### **Assets**
+- [Download pre-trained model](https://drive.google.com/drive/u/0/folders/1C3f9GGltuiRzsaexSyX36AlZBOeLn1Mc)
+- [Table bank dataset](https://doc-analysis.github.io/tablebank-page/)
+
   
 ---
 # Day 20:
