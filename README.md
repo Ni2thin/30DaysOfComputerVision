@@ -784,7 +784,45 @@ Here, the API processes images, illustrating how to utilize AWS for computer vis
 - **Metrics vs. Reality**: Validate models in real-world settings to align statistics with practical outcomes.
 
 --- 
-# Day 19:
+# Day 19: Invoice Logo Detection with YOLO
+
+## Project Overview
+- Automates detection of invoice logos using YOLO.
+- Includes synthetic dataset generation and evaluation of the trained model.
+
+## Features
+- **Synthetic Dataset Creation**: Places logos on random backgrounds at varying sizes and positions.
+- **YOLO Annotations**: Generates bounding box annotations for training.
+- **Model Evaluation**: Tests on synthetic and real-world images.
+
+## Workflow
+1. **Synthetic Dataset Generation**:
+   - Resizes and places logos randomly on backgrounds.
+   - Generates YOLO-format annotations.
+2. **Model Training**:
+   - Trains YOLO on the synthetic dataset.
+3. **Testing**:
+   - Evaluates the trained model on test images.
+   - Displays predictions with bounding boxes and labels.
+
+## Key Highlights
+- **Randomized Scaling and Positioning**: Ensures diverse training data.
+- **YOLO Integration**: Facilitates real-time logo detection.
+- **Expandable Design**: Add more logos or backgrounds to scale the project.
+
+## How to Use
+1. **Dataset Creation**:
+   - Run the script to generate synthetic images and annotations.
+2. **Model Training**:
+   - Train YOLO using the generated dataset.
+3. **Testing**:
+   - Use the trained model to detect logos on test images.
+
+## Example Output
+- Synthetic logo placement and YOLO predictions on test images.
+  
+---
+# Day 20:
 
 
 
