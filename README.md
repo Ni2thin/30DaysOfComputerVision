@@ -924,9 +924,89 @@ Once the model is trained:
 
 
 --- 
-# Day 21:
+# Day 21: Face Detection and Golden Ratio Analysis using face-api.js 
+
+This project demonstrates real-time face detection and facial analysis using **face-api.js**, a JavaScript library. The goal is to showcase how facial landmarks are detected and how the Golden Ratio is calculated using these landmarks. This can be useful in various applications, including aesthetics analysis, biometrics, and more. The web app is built with **React**, providing a responsive user interface.
+
+### Key Features and Functions:
+1. **Real-Time Face Detection (Bounding Boxes)**:
+   - **Goal**: Detect faces from webcam feed and display bounding boxes around each face.
+   - **Key Functionality**: 
+     - Uses **face-api.js** to detect faces in real-time.
+     - Bounding boxes are drawn around faces with labels for each detected face.
+     - Up to **multiple faces** can be detected simultaneously.
+   
+2. **Golden Ratio Calculation**:
+   - **Goal**: Calculate the Golden Ratio using facial landmarks for aesthetic analysis.
+   - **Key Calculation**:
+     - Utilizes 68 facial landmarks (provided by **face-api.js**).
+     - Focuses on the ratio between the forehead-to-chin distance and the eye-to-chin distance.
+     - The formula: `Golden Ratio = Forehead-to-Chin Distance / Eye-to-Chin Distance`.
+     - **Accuracy**: Results are displayed with 2 decimal places precision for better clarity.
+     - **Example output**: A Golden Ratio of **1.86**, which indicates a fairly balanced proportion.
+   
+3. **Interactive Web Interface**:
+   - **Buttons**:
+     - **Start Capturing**: Start webcam feed and face detection.
+     - **Stop Capturing**: Stop webcam feed and face detection.
+     - **Analyze Face**: Trigger face detection and Golden Ratio calculation.
+     - **Toggle Dark Mode**: Switch between light and dark modes for better UI customization.
+   - **User Experience**:
+     - Real-time updates are displayed, allowing users to see the bounding boxes as faces are detected and the Golden Ratio calculation for each face.
+     - **Responsive Design**: Optimized for mobile and desktop use, ensuring a smooth user experience.
+
+4. **Face Detection Algorithm**:
+   - **Model**: Utilizes **ssdMobilenetv1** for face detection.
+   - **Landmark Detection**: Uses **68 facial landmarks** for detailed analysis (such as eyes, nose, mouth, jawline).
+   - **Canvas Drawing**: Bounding boxes and results are drawn directly on the HTML canvas element for real-time visualization.
+   - **Detection Speed**: Capable of detecting faces at **30-40 FPS** on most modern devices.
+   
+5. **Real-Time Video Feed**:
+   - **Webcam Access**: Access webcam via **getUserMedia** API.
+   - **Video Dimensions**: Webcam feed is captured at **640x480 px** resolution for smooth processing.
+   - **Canvas Size**: The canvas size is dynamically adjusted to match the video feed size for consistent detection.
 
 
+## Project Setup and Workflow:
+1. **Model Loading**:
+   - The models (such as **ssdMobilenetv1**, **faceLandmark68Net**) are loaded from the **/models** folder.
+   - Models are loaded asynchronously, and a loading message is displayed until all models are ready.
+   - **Loading time**: Approximately **5-10 seconds** depending on network speed and device performance.
+
+2. **User Interaction**:
+   - Upon clicking **Start Capturing**, the webcam feed is initiated, and the face detection algorithm begins processing.
+   - Clicking **Analyze Face** triggers the face detection and Golden Ratio calculation.
+   - Bounding boxes are drawn around the detected faces, and Golden Ratio values are displayed in real-time.
+
+3. **Golden Ratio Calculation**:
+   - The Golden Ratio is calculated every time a face is detected.
+   - Calculations are based on the following landmarks:
+     - **Nose tip** (point 6 from the nose landmarks) for eye-to-chin distance.
+     - **Jaw outline** (point 8 from the jaw outline landmarks) for forehead-to-chin distance.
+   - The result is rounded to **2 decimal places** for clarity, e.g., **1.86**.
+
+## Technologies Used:
+- **face-api.js** for face detection, landmark identification, and drawing bounding boxes.
+- **React.js** for the frontend user interface.
+- **HTML5 Canvas** for real-time bounding box drawing on the video feed.
+- **JavaScript (ES6+)** for asynchronous model loading and real-time video feed handling.
+- **CSS** for styling, including responsive design and dark mode support.
+
+## Output:
+- **Face Detection**:
+  - Bounding boxes drawn around each detected face.
+  - Real-time feedback on the detected faces.
+  - **Multiple faces** can be detected simultaneously, with bounding boxes and labels for each face.
+  
+- **Golden Ratio Calculation**:
+  - Real-time calculation of the Golden Ratio, displayed in the UI with precision (e.g., **1.86**).
+  - Users can observe how the facial proportion relates to the Golden Ratio for aesthetic analysis.
+
+## Assets and References:
+- **face-api.js Documentation**: [https://github.com/justadudewhohacks/face-api.js](https://github.com/justadudewhohacks/face-api.js)
+- **React Documentation**: [https://reactjs.org/](https://reactjs.org/)
+---
+# Day 22:
 
 
 
