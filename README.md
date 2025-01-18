@@ -40,9 +40,9 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 19 | 14-01-2025 | Real world application of computer vision           | [Invoice logo detection](https://youtu.be/OP8AozaEuLM?feature=shared)            |
 | Day 20 | 15-01-2025 | Train Detectron2 object detection custom dataset     | [Train Detectron2](https://youtu.be/I7O4ymSDcGw?feature=shared)                  |
 | Day 21 | 16-01-2025 | Face recognition on your webcam with Python & OpenCV | [Face-Api.js](https://www.youtube.com/watch?v=yBgXx0FLYKc)                  |
-| Day 22 | 17-01-2025 | Face attendance + face recognition with OpenCV      | [Face attendance](link)                   |
-| Day 23 | 18-01-2025 | Machine learning with AWS practical projects        | [ML with AWS](link)                       |
-| Day 24 | 19-01-2025 | Chat with an image (LangChain custom)                | [Chat with an image](link)                |
+| Day 22 | 17-01-2025 | Face attendance + face recognition with OpenCV      | [Face attendance](https://www.youtube.com/watch?v=z_dbnYHAQYg)                   |
+| Day 23 | 18-01-2025 | Machine learning with AWS practical projects        | [ML with AWS](https://youtu.be/ZvBZh8ky-zQ?feature=shared)                       |
+| Day 24 | 19-01-2025 | Chat with an image (LangChain custom)                | [Chat with an image](https://youtu.be/71EOM5__vkI?feature=shared)                |
 | Day 25 | 20-01-2025 | Image generation with Python (Train Stable Diffusion) | [Image generation](link)                  |
 | Day 26 | 21-01-2025 | Face recognition + liveness detection               | [Face recognition + liveness](link)       |
 | Day 27 | 22-01-2025 | Face recognition and face matching with Python      | [Face matching](link)                     |
