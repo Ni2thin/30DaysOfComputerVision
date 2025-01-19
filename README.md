@@ -1014,16 +1014,12 @@ This project focuses on constructing a **Face Attendance System** using **face r
 
 1. **User Registration**  
    - Allows new users to register by capturing a selfie and entering their name.
-
 2. **User Login**  
    - Enables registered users to log in through real-time facial recognition.
-
 3. **Webcam Integration**  
    - Displays a live video feed for user interaction, supporting login and registration actions.
-
 4. **Attendance Logging**  
    - Records the user’s name and timestamp upon successful login, creating a detailed attendance log.
-
 5. **Error Handling**  
    - Prompts unrecognized users to either register or retry logging in, ensuring a smooth user experience.
 
@@ -1032,41 +1028,116 @@ This project focuses on constructing a **Face Attendance System** using **face r
 - **Interface Design**:  
   - A user-friendly interface with buttons for login and registration.
   - Webcam feed updates in real-time for interaction.
-
 - **Registration Process**:  
   1. Users click "Register New User" to start the process.  
   2. The system accesses the webcam for capturing a selfie.  
   3. Users save the image along with their name to a database.  
-
 - **Login Process**:  
   1. Registered users click "Login" to start recognition.  
   2. The system compares live webcam frames with stored images.  
   3. A match welcomes the user; otherwise, a notification is displayed.  
 
-#### **Implementation Steps**
+## **Implementation Steps**
 
 1. **Environment Setup**:  
    - Install dependencies with `pip install opencv-python face-recognition`.  
    - Ensure the system can access the webcam securely.
-
 2. **Interface Development**:  
    - Use Tkinter to create a main window with buttons for login and registration.  
    - Embed the live webcam feed into the GUI for user interaction.
-
 3. **Registration Process**:  
    - Capture a selfie using the webcam.  
    - Save the image along with the user’s name in a designated directory.
-
 4. **Facial Recognition**:  
    - Compare live frames with stored images using the face recognition library.  
    - Log attendance by appending the user’s name and timestamp to a text file.
 ---
-# Day 23:
+# Day 23: Setting Up an Intruder Detection System Using AWS
+
+In this project, we set up an **intruder detection system** leveraging several Amazon Web Services (AWS) components. The system integrates **real-time video streaming**, **machine learning**, and **cloud-based storage solutions** to enhance building security. By utilizing **Amazon Kinesis Video Streams**, **Amazon Rekognition**, **DynamoDB**, and **SNS (Simple Notification Service)**, this project delivers a scalable, secure, and efficient security solution.
+
+## **Key Features**
+
+1. **Real-Time Video Streaming**  
+   - Webcam captures video and streams it in real-time using **Amazon Kinesis Video Streams**.
+
+2. **Intruder Detection**  
+   - **Amazon Rekognition** analyzes each frame for human presence.
+
+3. **Data Storage**  
+   - Video frames and detection data are backed up to **Amazon S3** and stored in **DynamoDB**.
+
+4. **Notification System**  
+   - **SNS** sends email alerts to users upon detecting an intruder.
+
+## **System Architecture**
+
+- **Webcam**: Captures video for analysis.  
+- **Kinesis Video Streams**: Streams the captured video to the cloud for processing.  
+- **EC2 Instances**: Host applications for backup and intruder detection.  
+- **Amazon Rekognition**: Detects human presence in video frames.  
+- **S3 (Simple Storage Service)**: Stores video frames and backup data.  
+- **DynamoDB**: Keeps records of intruder detection events.  
+- **SNS (Simple Notification Service)**: Sends email alerts to users when an intruder is detected.
+
+## **System Functionality**
+
+1. **Real-Time Streaming**  
+   - The webcam streams video to **Kinesis Video Streams**.  
+   - The backup consumer saves every frame to **S3** for future reference.
+
+2. **Intruder Detection**  
+   - **Amazon Rekognition** checks each video frame for human presence.  
+   - The system continuously analyzes frames, processing one frame every 30 frames to optimize performance.
+
+3. **Notification System**  
+   - Upon detecting an intruder, **SNS** triggers an email alert to registered users.
+
+## **Step-by-Step Implementation**
+
+1. **Configuring the Video Producer**  
+   - Use the **Kinesis Video Streams Producer SDK** to stream data from the webcam.  
+   - A new video stream named "Intruder detection tutorial video stream" is created in the AWS Management Console.
+
+2. **Setting Up IAM User and Access Keys**  
+   - Create an IAM user with full access to **Kinesis Video Streams**.  
+   - Generate access keys for authenticating API calls.
+
+3. **Implementing the Backup Consumer**  
+   - Launch an **EC2 instance (t2.medium)** to handle the backup process.  
+   - Create an **S3 bucket** ("Intruder detection tutorial bucket") to store video frames.  
+   - Set up the backup consumer to receive and store frames from Kinesis in the S3 bucket.
+
+4. **Developing the Intruder Detection Consumer**  
+   - Launch another **EC2 instance** to handle intruder detection.  
+   - Create IAM roles to grant permissions for accessing **Rekognition**, **S3**, and **DynamoDB**.  
+   - Use **Amazon Rekognition's `detect_labels` function** to analyze frames and detect human presence.
+
+## **Technical Implementation Details**
+
+- **Streaming and Processing**  
+   - Video frames are streamed from the webcam and backed up to **S3**.  
+   - The intruder detection consumer processes frames at one frame every 30 frames to balance performance and efficiency.
+
+- **Amazon Rekognition Integration**  
+   - Frames are processed and converted into a format compatible with **Rekognition**.  
+   - The system checks for the label "person" to confirm the presence of an intruder.
+
+- **Data Storage and Alerts**  
+   - Detected frames are stored in a dedicated "detections" folder in **S3**.  
+   - Relevant detection data, including bounding boxes and frame numbers, are stored in **DynamoDB**.  
+   - **SNS** is used to send email notifications to users when an intruder is detected.
+
+## **Key Takeaways**
+
+- **AWS Components**: Knowledge of services like **Kinesis**, **Rekognition**, **S3**, and **DynamoDB** is essential for building cloud-based security systems.
+- **Real-Time Processing**: The ability to process data in real-time is critical for security applications.
+- **Cost Management**: Understanding the costs associated with AWS services is important for sustainable system implementation.
+- **Scalability**: Cloud solutions provide scalability, making it easy to expand security systems as needed.
 
 
-
-
-
+---
+# Day 24:
 
 
 
