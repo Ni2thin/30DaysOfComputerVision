@@ -1006,7 +1006,62 @@ This project demonstrates real-time face detection and facial analysis using **f
 - **face-api.js Documentation**: [https://github.com/justadudewhohacks/face-api.js](https://github.com/justadudewhohacks/face-api.js)
 - **React Documentation**: [https://reactjs.org/](https://reactjs.org/)
 ---
-# Day 22:
+# Day 22: Building a Face Attendance System with Face Recognition
+
+This project focuses on constructing a **Face Attendance System** using **face recognition** technology. The system provides a seamless way to register and log attendance through facial recognition, integrating computer vision principles and machine learning for an interactive user experience.
+
+## **Key Features**
+
+1. **User Registration**  
+   - Allows new users to register by capturing a selfie and entering their name.
+
+2. **User Login**  
+   - Enables registered users to log in through real-time facial recognition.
+
+3. **Webcam Integration**  
+   - Displays a live video feed for user interaction, supporting login and registration actions.
+
+4. **Attendance Logging**  
+   - Records the user’s name and timestamp upon successful login, creating a detailed attendance log.
+
+5. **Error Handling**  
+   - Prompts unrecognized users to either register or retry logging in, ensuring a smooth user experience.
+
+## **System Overview**
+
+- **Interface Design**:  
+  - A user-friendly interface with buttons for login and registration.
+  - Webcam feed updates in real-time for interaction.
+
+- **Registration Process**:  
+  1. Users click "Register New User" to start the process.  
+  2. The system accesses the webcam for capturing a selfie.  
+  3. Users save the image along with their name to a database.  
+
+- **Login Process**:  
+  1. Registered users click "Login" to start recognition.  
+  2. The system compares live webcam frames with stored images.  
+  3. A match welcomes the user; otherwise, a notification is displayed.  
+
+#### **Implementation Steps**
+
+1. **Environment Setup**:  
+   - Install dependencies with `pip install opencv-python face-recognition`.  
+   - Ensure the system can access the webcam securely.
+
+2. **Interface Development**:  
+   - Use Tkinter to create a main window with buttons for login and registration.  
+   - Embed the live webcam feed into the GUI for user interaction.
+
+3. **Registration Process**:  
+   - Capture a selfie using the webcam.  
+   - Save the image along with the user’s name in a designated directory.
+
+4. **Facial Recognition**:  
+   - Compare live frames with stored images using the face recognition library.  
+   - Log attendance by appending the user’s name and timestamp to a text file.
+---
+# Day 23:
 
 
 
