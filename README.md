@@ -1008,7 +1008,7 @@ This project demonstrates real-time face detection and facial analysis using **f
 ---
 # Day 22: Building a Face Attendance System with Face Recognition
 
-This project focuses on constructing a **Face Attendance System** using **face recognition** technology. The system provides a seamless way to register and log attendance through facial recognition, integrating computer vision principles and machine learning for an interactive user experience.
+This project focuses on constructing a **Face Attendance System** using **face recognition** technology. The system provides a seamless way to register and log attendance through facial recognition, integrating computer vision principles and machine learning for an interactive user experience [link.](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Face%20attendance%20with%20python)
 
 ## **Key Features**
 
@@ -1054,6 +1054,7 @@ This project focuses on constructing a **Face Attendance System** using **face r
      
 ## Assets
   - [face_recognition model](https://github.com/ageitgey/face_recognition)
+  - [Silent-Face-Anti-Spoofing](https://github.com/minivision-ai/Silent-Face-Anti-Spoofing/tree/master)
   - [using webapp](https://www.youtube.com/watch?v=yWmW5uEtNws)
 ---
 # Day 23: Setting Up an Intruder Detection System Using AWS
