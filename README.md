@@ -1051,6 +1051,10 @@ This project focuses on constructing a **Face Attendance System** using **face r
 4. **Facial Recognition**:  
    - Compare live frames with stored images using the face recognition library.  
    - Log attendance by appending the user’s name and timestamp to a text file.
+     
+## Assets
+  - [face_recognition model](https://github.com/ageitgey/face_recognition)
+  - [using webapp](https://www.youtube.com/watch?v=yWmW5uEtNws)
 ---
 # Day 23: Setting Up an Intruder Detection System Using AWS
 
