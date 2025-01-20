@@ -1142,7 +1142,41 @@ In this project, we set up an **intruder detection system** leveraging several A
 
 
 ---
-# Day 24:
+# Day 24: Building a Web Application for Image Analysis with Python, Streamlit, and Langchain
+
+This project demonstrates how to create a web application that processes user-uploaded images, detects objects, and answers questions about image content. By leveraging **Streamlit** for the user interface and **Langchain** for managing interactions with a large language model, this app showcases the seamless integration of computer vision and natural language processing technologies. [link](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Image%20webapp%20-%20Langchain)
+
+## Features
+
+- **Image Uploads**: Users can upload images for analysis through a web interface.
+- **Dynamic Interactions**: Users can ask questions about image content or request detailed object detection.
+- **Object Detection**: Uses pre-trained models like **Facebook DETR ResNet50** to identify objects in images with bounding boxes and confidence scores.
+- **Image Captioning**: Generates descriptive captions for uploaded images using **Salesforce BLIP**.
+- **Conversational Memory**: Retains previous interactions to provide dynamic and context-aware responses.
+- **Streamlit Interface**: Simple and intuitive UI for uploading images and interacting with the model.
+
+## Implementation Steps
+
+### 1. Setting Up the Web Application
+- Build a user interface with **Streamlit** for image uploads and text inputs.
+- Initialize a Langchain agent to handle queries and interact with the image-processing tools.
+
+### 2. Adding Image Processing Functions
+- **get_image_caption**: Generates captions for images using a pre-trained BLIP model.
+- **detect_objects**: Detects objects in images, highlighting them with bounding boxes and confidence scores.
+
+### 3. Creating Langchain Tools
+- **Image Caption Tool**: Captures image descriptions using the BLIP model.
+- **Object Detection Tool**: Processes images to identify objects and provides detailed information about them.
+
+### 4. Managing API Interactions
+- Implements retry logic to handle **RateLimitError**, ensuring smooth communication with OpenAI APIs.
+- Logs errors and warnings to facilitate debugging and monitoring.
+
+--- 
+# Day 25:
+
+
 
 
 
