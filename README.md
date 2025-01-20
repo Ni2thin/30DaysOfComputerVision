@@ -43,9 +43,9 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 22 | 17-01-2025 | Face attendance + face recognition with OpenCV      | [Face attendance](https://www.youtube.com/watch?v=z_dbnYHAQYg)                   |
 | Day 23 | 18-01-2025 | Machine learning with AWS practical projects        | [ML with AWS](https://youtu.be/ZvBZh8ky-zQ?feature=shared)                       |
 | Day 24 | 19-01-2025 | Chat with an image (LangChain custom)                | [Chat with an image](https://youtu.be/71EOM5__vkI?feature=shared)                |
-| Day 25 | 20-01-2025 | Image generation with Python (Train Stable Diffusion) | [Image generation](link)                  |
-| Day 26 | 21-01-2025 | Face recognition + liveness detection               | [Face recognition + liveness](link)       |
-| Day 27 | 22-01-2025 | Face recognition and face matching with Python      | [Face matching](link)                     |
+| Day 25 | 20-01-2025 | Image generation with Python (Train Stable Diffusion) | [Image generation](https://youtu.be/_yjNLzUwFhA?feature=shared)                  |
+| Day 26 | 21-01-2025 | Face recognition + liveness detection               | [Face recognition + liveness](https://youtu.be/_KvtVk8Gk1A?feature=shared)       |
+| Day 27 | 22-01-2025 | Face recognition and face matching with Python      | [Face matching](https://youtu.be/FavHtxgP4l4?feature=shared)                     |
 | Day 28 | 23-01-2025 | Machine learning web app with Python, Flask, and others | [ML web app](link)                     |
 | Day 29 | 24-01-2025 | Object detection on Raspberry Pi USB camera         | [Object detection on Raspberry Pi](link)  |
 | Day 30 | 25-01-2025 | Image generation with Python & Stable Diffusion     | [Image generation](link)                  |
