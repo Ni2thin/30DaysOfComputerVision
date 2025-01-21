@@ -1174,10 +1174,50 @@ This project demonstrates how to create a web application that processes user-up
 - Logs errors and warnings to facilitate debugging and monitoring.
 
 --- 
-# Day 25:
+# Day 25: Dreambooth Image Generation - Python Application
+
+This project involves building a Python application that leverages **Dreambooth** to generate personalized and stylized images based on user-provided inputs. The project integrates **AWS services** like S3 and SQS for efficient task management and storage and utilizes **RunPod** for high-performance model training. The goal is to provide a scalable platform for creative image generation using deep learning.
+
+## Project Features
+
+### Personalized Image Generation
+- Train custom models with user-provided image datasets.
+- Generate stylized images based on predefined styles like "Viking" or "Jedi."
+
+### AWS Integration
+- **S3 Bucket**:
+  - Store input images and generated results securely.
+- **SQS Queue**:
+  - Manage training and inference tasks for efficient processing.
+
+### Prediction and Training Workflow
+- Automates the process of uploading images, triggering training, and retrieving results.
+- Ensures task deduplication with SQS for seamless operations.
+
+### Cloud-Based Training
+- **RunPod GPU Pods**:
+  - Leverages high-performance GPUs (e.g., RTX A6000) for model training.
+
+### Dynamic Interaction
+- Users can enter custom prompts for unique outputs, enhancing creativity.
+- Generates multiple images for selected styles with varying confidence levels.
+
+### User-Friendly Interface
+- Simple Python application with clear configurations.
+- Integration with local environments and cloud services for a smooth experience.
+## Output
+- Generate stylized images from user-provided inputs.
+- View results directly in the local application or fetch from **S3**.
+
+## Assets
+- Clone the **Dreambooth Repository** from GitHub.
+- AWS setup for **S3 Bucket**, **SQS Queue**, and **IAM User**.
+- Deploy **RunPod** instances for GPU-accelerated processing.
 
 
 
+---
+# Day 26:
 
 
 
