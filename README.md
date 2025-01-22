@@ -1217,9 +1217,42 @@ This project involves building a Python application that leverages **Dreambooth*
 
 
 ---
-# Day 26:
+# Day 26: Real-Time Face Recognition and Attendance System
+
+A real-time face recognition system to automate attendance management using Flask, OpenCV, and machine learning.
+
+## **Features**
+
+- **Face Detection**: Detects faces in real-time using OpenCV's Haar cascades.
+- **Face Recognition**: Identifies individuals using a KNN model trained with facial features.
+- **Attendance Tracking**: Automatically logs attendance with names, roll numbers, and timestamps.
+- **User Management**: Add, list, or delete users and retrain the model.
+- **Real-Time Updates**: Captures and processes faces live, showing progress during user registration.
+- **Interactive UI**: Simple web interface for managing users and viewing attendance.
+
+## **Technical Details**
+
+- **Model Training**: KNN classifier trained on resized, flattened face images.
+- **Attendance Storage**: Daily CSV files to record attendance.
+- **Web Routes**:
+  - `/`: Displays daily attendance.
+  - `/listusers`: Lists registered users.
+  - `/add`: Registers new users by capturing face images.
+  - `/deleteuser`: Deletes user data and retrains the model.
+  - `/start`: Starts the face recognition process.
+
+## **Output**
+- **Video Feed**: Real-time face detection and recognition with bounding boxes and names.
+- **Attendance List**: Displays recognized individuals with timestamps.
 
 
+## **Assets**
+- Haar cascade for face detection (`haarcascade_frontalface_default.xml`).
+- Trained model (`face_recognition_model.pkl`).
+- Attendance data stored in CSV files.
+
+---
+# Day 27:
 
 
 
