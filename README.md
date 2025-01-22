@@ -1219,7 +1219,7 @@ This project involves building a Python application that leverages **Dreambooth*
 ---
 # Day 26: Real-Time Face Recognition and Attendance System
 
-A real-time face recognition system to automate attendance management using Flask, OpenCV, and machine learning.
+A real-time face recognition system to automate attendance management using Flask, OpenCV, and machine learning. [link](https://github.com/Ni2thin/30DaysOfComputerVision/tree/main/Projects/Face%20attendance%20with%20GUI)
 
 ## **Features**
 
@@ -1242,9 +1242,7 @@ A real-time face recognition system to automate attendance management using Flas
   - `/start`: Starts the face recognition process.
 
 ## **Output**
-- **Video Feed**: Real-time face detection and recognition with bounding boxes and names.
-- **Attendance List**: Displays recognized individuals with timestamps.
-
+<img src="https://github.com/Ni2thin/30DaysOfComputerVision/blob/main/Projects/Face%20attendance%20with%20GUI/attendance.png" width="1050" height="500"/>
 
 ## **Assets**
 - Haar cascade for face detection (`haarcascade_frontalface_default.xml`).
