@@ -46,9 +46,9 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | Day 25 | 20-01-2025 | Image generation with Python (Train Stable Diffusion) | [Image generation](https://youtu.be/_yjNLzUwFhA?feature=shared)                  |
 | Day 26 | 21-01-2025 | Real-Time Face Recognition and Attendance System              | [Face attendance with GUI](https://www.youtube.com/watch?v=rVQv1TwvQBc&list=PL6DmgjJvD9OafqxqHwPYl3y-hVNBmfNnc)       |
 | Day 27 | 22-01-2025 | Face recognition and face matching with Python      | [Face matching](https://youtu.be/FavHtxgP4l4?feature=shared)                     |
-| Day 28 | 23-01-2025 | Machine learning web app with Python, Flask, and others | [ML web app](link)                     |
-| Day 29 | 24-01-2025 | Object detection on Raspberry Pi USB camera         | [Object detection on Raspberry Pi](link)  |
-| Day 30 | 25-01-2025 | Image generation with Python & Stable Diffusion     | [Image generation](link)                  |
+| Day 28 | 23-01-2025 | Machine learning web app with Python, Flask, and others | [ML web app](https://youtu.be/W8OvdQPL7lk)                     |
+| Day 29 | 24-01-2025 | Object detection on Raspberry Pi USB camera         | [Object detection on Raspberry Pi](https://youtu.be/A-r5RWjnf20?feature=shared)  |
+| Day 30 | 25-01-2025 | Image generation with Python & Stable Diffusion     | [Image generation](https://youtu.be/vXASIOLQGrU?feature=shared)                  |
 
 ---
 
