@@ -1328,8 +1328,60 @@ The web interface is designed to provide a user-friendly experience.
 - **ModelBit**: Simplifies the deployment of machine learning functions as APIs.
 
 ---
-# Day 29: 
+# Day 29: Real-Time License Plate Detection with Raspberry Pi and USB Coral Accelerator
 
+## **Introduction**
+- Real-time license plate detection is vital for security, traffic management, and automated parking systems.
+- Utilizes **Raspberry Pi** for affordability and portability and **USB Coral Accelerator** for efficient inference.
+- **YOLOv8** serves as the object detection model.
+
+
+## **Key Concepts**
+- **Raspberry Pi**: Compact, affordable computer for versatile projects.
+- **USB Coral Accelerator**: Speeds up machine learning model inference using Edge TPU.
+- **YOLOv8**: Advanced object detection model.
+- **Edge Computing**: Processes data locally for real-time performance.
+
+## **System Setup**
+1. **Connecting the Raspberry Pi**:
+   - SSH into the Raspberry Pi and set up a project directory: `license plate detection edgetpu`.
+
+2. **Installing Libraries**:
+   - Install **Edge TPU runtime** and **pycoral library** (via a Python 3.9 virtual environment to avoid compatibility issues).
+   - Install **Ultralytics library** (YOLOv8, version 8.2.73).
+
+## **Developing the Detection Script**
+1. **Python Script Overview**:
+   - `main.py` serves as the main script for detecting license plates using object detection.
+   - Reads webcam frames and outputs processed videos with bounding boxes.
+
+2. **Processing Loop**:
+   - Iterates through webcam frames, applies the detector, and processes results.
+   - Valid detections require a confidence score > **0.6**.
+
+3. **Drawing Bounding Boxes**:
+   - Bounding boxes and labels ("license plate") are added to detected regions.
+   - Ensures real-time performance with ~14 FPS.
+
+
+## **Model Creation**
+   **Steps**:
+   - Train the YOLOv8 model to detect license plates (results in a PyTorch file).
+   - Export to TensorFlow Lite format for edge optimization.
+   - Compile for Edge TPU for enhanced inference speed.
+
+
+## **Practical Demonstration**
+1. **Testing**:
+   - Demonstrates real-time detection using various license plates.
+   - Output video (`output.avi`) showcases accurate and stable detection.
+
+2. **Performance**:
+   - Achieves ~14 FPS with satisfactory accuracy.
+   - Some misdetections occur but overall effectiveness is highlighted.
+
+--- 
+# Day 30: 
 
 
 
