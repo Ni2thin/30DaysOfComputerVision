@@ -15,7 +15,7 @@ Like the rising sun, every new day brings an opportunity to shine brighter. With
 | [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/) |   📈   |      
 | [Computer Vision YouTube Playlist](https://www.youtube.com/watch?v=HiTw5KFw7ic&list=PLb49csYFtO2HAdNGChGzohFJGnJnXBOqd) |  ![Playlist Thumbnail](https://img.youtube.com/vi/HiTw5KFw7ic/hqdefault.jpg) |
 
-## Progress Tracker
+## Progress Tracker 
 
 | Day  | Date         | Topics                                               | Resources                                          |
 |------|--------------|------------------------------------------------------|----------------------------------------------------|
